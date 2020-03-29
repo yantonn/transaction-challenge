@@ -1,0 +1,10 @@
+.idea/
+__pycache__/
+*.py.swp
+*.pyc
+*~
+setuptools-33.1.1.zip
+.env
+venv/
+.pytest_cache/
+.DS_Store

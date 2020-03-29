@@ -1,0 +1,5 @@
+inject==3.5.1
+bunch==1.0.1
+python-i18n==0.3.6
+blinker==1.4
+marshmallow==3.5.1

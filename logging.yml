@@ -1,0 +1,25 @@
+version: 1
+disable_existing_loggers: False
+formatters:
+  generic:
+    format: "main[trs-clg]  - %(threadName)s - %(name)s - %(levelname)s - %(message)s"
+
+filters:
+  context:
+    (): service.logging.ContextFilter
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: INFO
+    formatter: generic
+    filters: [context]
+
+loggers:
+  root:
+    level: INFO
+    propagate: no
+
+root:
+  level: INFO
+  handlers: [console]
