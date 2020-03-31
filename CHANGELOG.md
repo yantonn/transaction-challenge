@@ -7,7 +7,7 @@
         - Adição das classes de fachada e serviço para representar ações em uma transação, representadas por `TransactionFacade` e `TransactionService`
         - Adição de arquivo `service/exceptions.py` com classe padrão para exceções de negócio.
         - Adição de uma `factory` de dados `fakes`, utilizando a lib `faker` para trabalhar com dados mais próximos da realidade da aplicação, podendo posteriormente serem utilizados em testes integrados e automatizados.
-        - Adiçnao de um `provider` de dados fakes para uma transação.
+        - Adição de um `provider` de dados fakes para uma transação.
         - Adição de diretório `test/unit` com todos os testes unitários em `TransactionFacade` e `TransactionService` utilizando o framework `pytest`. Foi criado diretório específico `test/unit` para futuramente segregar em outros tipos de teste, como `automated/`, `integrated/` entre outros.
    - branch(feature/file_loader):
         - Adição de abstrações utilizando ABC python e classes para performar leitura em um arquivo de transações txt.
