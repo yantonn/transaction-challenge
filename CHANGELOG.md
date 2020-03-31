@@ -3,6 +3,7 @@
 # {version} [{date}]
 
 ### Minor
+   - branch(feature/add_unit_test_file_builder) - Adicionado teste unitario na classe builder de arquivos de transação
    - branch(feature/adding_main_application) - Adicionado arquivo `main.py` para executar aplicação como um todo.
    - branch(feature/transaction_file_builder):
         - Adicionado classe responsável por construir e gravar o resultado para todas as transações processadas.
