@@ -30,6 +30,11 @@
    - branch(feature/creating_data_models) - Criação de modelos para representação de um objeto de transação.
 
 ### Patch
+   - branch(bugfix/file_loader_transaction_service):
+        - Ajuste na mensagem de log na classe `TransactionService`
+        - Adicionado arquivo de operations.txt com todas as operações passiveis de problema e sucesso.
+        - Ajuste para environment apontar para ambiente local
+        - Ajuste nos unitarios em razao da alteração da mensagem de log
    - branch(bugfix/adjust_unit_tests):
         - Ajuste na assinatura de alguns métodos com o type hint
         - Ajuste nos testes unitarios onde foram alteradas o padrao de mensagem
