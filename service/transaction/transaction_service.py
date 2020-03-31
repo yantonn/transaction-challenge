@@ -55,7 +55,7 @@ class TransactionService:
         minimum_income_committed = transaction.income * MINIMUM_COMMITED_VALUE_PERCENTAGE
 
         if transaction.installment_value > minimum_income_committed:
-            raise BusinessException(_('messages.compromised_income_commited'))
+            raise BusinessException(_('messages.compromised_income'))
 
     @staticmethod
     def __validate_transaction_low_score(transaction: Transaction) -> None:

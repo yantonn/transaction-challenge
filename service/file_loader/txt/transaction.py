@@ -43,7 +43,7 @@ class TransactionTXTLoader(TXTLoader):
                     data = json.loads(line)['transaction']
 
                     for field, value in zip(self._fields.keys(), data.values()):
-                        data[field] = self._fields[field](value) if value else None
+                        data[field] = self._fields[field](value) if value is not None else None
 
                         data = self.get_default_fields(data)
 

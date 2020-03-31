@@ -30,7 +30,7 @@ class TransactionServiceTest(unittest.TestCase):
         with self.assertRaises(BusinessException) as context:
             self._transaction_service.do_transaction(self.transaction)
 
-        self.assertEqual(_('messages.compromised_income_commited'), str(context.exception))
+        self.assertEqual(_('messages.compromised_income'), str(context.exception))
 
     def test_do_transaction_when_has_low_score_then_then_raise_exception(self):
         # arrange

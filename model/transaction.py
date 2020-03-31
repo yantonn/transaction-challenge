@@ -19,7 +19,10 @@ class Transaction:
 
     @property
     def installment_value(self) -> float:
-        return self.requested_value / self.installments or 0.0
+        if self.installments is 0:
+            return self.requested_value
+
+        return self.requested_value / self.installments
 
     def __repr__(self) -> str:
         return f'[Transaction id="{self.id}", consumer_id="{self.consumer_id}, time={self.time}, score={self.score}"]'
