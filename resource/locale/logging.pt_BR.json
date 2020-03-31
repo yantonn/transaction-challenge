@@ -7,6 +7,11 @@
         "no_transactions_to_write": "Não possui transações a serem escritas em arquivo",
         "transactions_file_write_success": "Arquivo de processamento das transações escrito com sucesso",
 
-        "payload_error": "Ocorreu um erro de contrato ao processar o payload: '%{payload}'"
+        "payload_error": "Ocorreu um erro de contrato ao processar o payload: '%{payload}'",
+
+        "loader_field_value_error": "Ocorreu um erro ao tentar efetuar o parse de um campo do arquivo",
+
+        "line_processed_with_error": "Linha do arquivo processada com erro, '%{line}'"
+
     }
 }

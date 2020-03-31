@@ -2,7 +2,7 @@ import inject
 import logging
 import logging.config
 
-from typing import List
+from typing import List, Tuple
 
 from service.file_loader.base import FileLoader
 from service.transaction.authorized_transaction_file_builder import AuthorizedTransactionFileBuilder
@@ -29,7 +29,7 @@ class ProgramInterface:
 
         return option
 
-    def load_operations_from_file(self) -> List[dict]:
+    def load_operations_from_file(self) -> Tuple[List[dict], List[dict]]:
         return self._file_loader.load_data()
 
 

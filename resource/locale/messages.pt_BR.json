@@ -4,6 +4,8 @@
         "low_score": "low-score",
         "doubled_transactions": "doubled-transactions",
         "minimum_installments": "minimum-installments",
-        "payload_error": "Ocorreu erro de contrato no payload recebido"
+        "payload_error": "Ocorreu erro de contrato no payload recebido",
+
+        "line_processed_with_error": "Linha do arquivo processada com erro, '%{line}'"
     }
 }

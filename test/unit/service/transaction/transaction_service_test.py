@@ -30,7 +30,7 @@ class TransactionServiceTest(unittest.TestCase):
         with self.assertRaises(BusinessException) as context:
             self._transaction_service.do_transaction(self.transaction)
 
-        self.assertEqual(_('messages.minimum_income_commited'), str(context.exception))
+        self.assertEqual(_('messages.compromised_income_commited'), str(context.exception))
 
     def test_do_transaction_when_has_low_score_then_then_raise_exception(self):
         # arrange
@@ -41,7 +41,7 @@ class TransactionServiceTest(unittest.TestCase):
         with self.assertRaises(BusinessException) as context:
             self._transaction_service.do_transaction(self.transaction)
 
-        self.assertEqual(_('messages.score_lower_than_minimum'), str(context.exception))
+        self.assertEqual(_('messages.low_score'), str(context.exception))
 
     def test_do_transaction_when_transaction_installments_low_then_minimum_then_raise_exception(self):
         # arrange
@@ -54,7 +54,7 @@ class TransactionServiceTest(unittest.TestCase):
         with self.assertRaises(BusinessException) as context:
             self._transaction_service.do_transaction(self.transaction)
 
-        self.assertEqual(_('messages.installments_lower_than_minimum'), str(context.exception))
+        self.assertEqual(_('messages.minimum_installments'), str(context.exception))
 
     @mock.patch('service.transaction.transaction_facade.TransactionService.'
                 '_TransactionService__is_transaction_interval_less_than_the_permitted')
@@ -113,4 +113,4 @@ class TransactionServiceTest(unittest.TestCase):
         with self.assertRaises(BusinessException) as context:
             self._transaction_service.do_transaction(self.transaction)
 
-        self.assertEqual(_('messages.transaction_interval_less_than_the_permitted'), str(context.exception))
+        self.assertEqual(_('messages.doubled_transactions'), str(context.exception))
