@@ -1,0 +1,12 @@
+{
+    "pt_BR": {
+        "app_starting": "Aplicação inicializada",
+
+        "transaction_authorired": "Transação autorizada, '%{transaction}'",
+        "transaction_unauthorized": "Transação não autorizada. Transação: '%{transaction}, motivo: '%{motive}''",
+        "no_transactions_to_write": "Não possui transações a serem escritas em arquivo",
+        "transactions_file_write_success": "Arquivo de processamento das transações escrito com sucesso",
+
+        "payload_error": "Ocorreu um erro de contrato ao processar o payload: '%{payload}'"
+    }
+}
