@@ -3,6 +3,9 @@
 # {version} [{date}]
 
 ### Minor
+   - branch(feature/file_loader):
+        - Adição de abstrações utilizando ABC python e classes para performar leitura em um arquivo de transações txt.
+        - Adição de provider de `file` para injeção de dependência 
    - branch(feature/add_sh_and_environment_info):
         - Adição de diretório `sh` com scripts para setar as variáveis de ambiente e inicializar a aplicação.
         - Adição de `.editorconfig` para padronizar configurações de editores
