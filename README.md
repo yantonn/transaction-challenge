@@ -5,11 +5,11 @@ Após o fim do processamento, transações processadas com erro serão exportada
 
 # Design
 
-Para solucionar o problema abordei uma arquitetura simples usando um design pattern [Facade](https://www.tutorialspoint.com/design_pattern/facade_pattern.htm), visando em implementações futuras um não-acoplamento e dependência na classes de negócio, hoje se caracteruza apenas pela classe `TransactionFacade`.
-Para controle lógico do domínio `Transaction` utilizo um `service` onde possui o controle das regras de negócio em cima de uma entidade `transaction` ou qualquer regra de negócio para transações.
-Para controle a nivel de contrato(efetuando o parse de um objeto dict para uma represetação como objeto dataclass) utilizo o [marshmallow](https://marshmallow.readthedocs.io/en/2.x-line/) possibilitando uma flexibilidade tanto na leitura quanto na transformação no dado para um objeto específico.
-Todas as classes que possuem algum método ou exercem alguma lógica, possuem um teste unitário implementado.
-Para controle dos testes a serem executados utilizo o framework `pytest` dando uma velocidade na execução dos mesmos.
+- Para solucionar o problema abordei uma arquitetura simples usando um design pattern [Facade](https://www.tutorialspoint.com/design_pattern/facade_pattern.htm), visando em implementações futuras um não-acoplamento e dependência na classes de negócio, hoje se caracteriza apenas pela classe `TransactionFacade`.
+- Para controle lógico do domínio `Transaction` utilizo um `service` onde possui o controle das regras de negócio em cima de uma entidade `transaction` ou qualquer regra de negócio para transações.
+- Para controle a nivel de contrato(efetuando o parse de um objeto dict para uma represetação como objeto dataclass) utilizo o [marshmallow](https://marshmallow.readthedocs.io/en/2.x-line/) possibilitando uma flexibilidade tanto na leitura quanto na transformação no dado para um objeto específico.
+- Todas as classes que possuem algum método ou exercem alguma lógica, possuem um teste unitário implementado.
+- Para controle dos testes a serem executados utilizo o framework `pytest` dando uma velocidade na execução dos mesmos.
 
 
 ## Variáveis de ambiente
