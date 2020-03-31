@@ -3,6 +3,9 @@
 # {version} [{date}]
 
 ### Minor
+   - branch(feature/transaction_file_builder):
+        - Adicionado classe responsável por construir e gravar o resultado para todas as transações processadas.
+        - Adicionado também arquivo de configuração de log da aplicação.
    - branch(feature/creating_transaction_business_logic):
         - Adição das classes de fachada e serviço para representar ações em uma transação, representadas por `TransactionFacade` e `TransactionService`
         - Adição de arquivo `service/exceptions.py` com classe padrão para exceções de negócio.
