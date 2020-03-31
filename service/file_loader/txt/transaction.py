@@ -3,10 +3,10 @@
 import json
 from typing import Tuple, List
 
-from dateutil.parser import parse as date_parser
-
 from environment import get_file_operations_name, get_read_operations_path, get_type_file_loader
+
 from service.file_loader.txt.base import TXTLoader
+from service._i18n import _
 
 
 class TransactionTXTLoader(TXTLoader):
@@ -54,8 +54,7 @@ class TransactionTXTLoader(TXTLoader):
 
                     record_errors.append({
                         'line_error': line,
-                        'validations': [_('messages.line_processed_with_error')],
-                        'error': ex.__str__()
+                        'validations': [_('messages.line_processed_with_error', line=line)],
                     })
 
             return record_success, record_errors

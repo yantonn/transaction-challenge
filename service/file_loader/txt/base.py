@@ -16,7 +16,7 @@ class TXTLoader(FileLoader):
     def __init__(self, fields: dict):
         self._fields = fields
 
-    def load_data(self, file_name: str = get_file_operations_name()) -> Tuple[List, List]:
+    def load_data(self, file_name: str = get_file_operations_name()) -> Tuple[List[dict], List[str]]:
         """
         Objetivo do método é efetuar iteração sobre as linhas do arquivo de importação, criando objeto conforme o modelo
         definido pelos fields
@@ -43,11 +43,11 @@ class TXTLoader(FileLoader):
 
                         record_success.append(data)
 
-                except ValueError as ex:
+                except ValueError:
                     self.__logger.error(_('logging.loader_field_value_error'), exc_info=True)
-                    record_errors.append(ex.__str__())
+                    record_errors.append(line)
 
             return record_success, record_errors
 
-    def get_default_fields(self, data_load: dict):
+    def get_default_fields(self, data_load: dict) -> dict:
         return data_load

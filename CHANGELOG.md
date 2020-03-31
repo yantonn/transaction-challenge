@@ -28,3 +28,8 @@
    - branch(feature/creating_transaction_schema) - Criação de schemas para carregamento de contrato e posterior instancia de uma dataclass de transação. 
    - branch(feature/creating_data_models) - Criação de modelos para representação de um objeto de transação.
 
+### Patch
+   - branch(bugfix/adjust_unit_tests):
+        - Ajuste na assinatura de alguns métodos com o type hint
+        - Ajuste nos testes unitarios onde foram alteradas o padrao de mensagem
+        - Criacao de novas chaves no resource visto que nao existiam no json internacionalização das mensagens da aplicação.
