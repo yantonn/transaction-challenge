@@ -1,0 +1,9 @@
+{
+    "pt_BR": {
+        "compromised_income": "compromised-income",
+        "low_score": "low-score",
+        "doubled_transactions": "doubled-transactions",
+        "minimum_installments": "minimum-installments",
+        "payload_error": "Ocorreu erro de contrato no payload recebido"
+    }
+}
