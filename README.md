@@ -3,6 +3,22 @@
 Basicamente consiste em um sistema que efetua a leitura de um arquivo contendo possiveis transações de crédito, onde que cada transação incorre em validações de negócio.
 Após o fim do processamento, transações processadas com erro serão exportadas a um arquivo persistidas em um layout conforme sugerido pelo desafio.
 
+# Executando em Ambiente Docker
+
+Primeiro efetue o build da imagem utilizando o comando:
+
+`
+docker build -t transaction-challenge:0.1.0 .
+`
+
+Para executar o programa, em seu terminal execute o seguinte comando:
+
+`
+docker run -v /tmp/transaction-challenge/authorized:/tmp -it transaction-challenge:0.1.0
+`
+
+O resultado do processamento das transações poderá ser encontrado em: `tmp/transaction-challenge/authorized/authorized.txt`
+
 # Design
 
 - Para solucionar o problema abordei uma arquitetura simples usando um design pattern [Facade](https://www.tutorialspoint.com/design_pattern/facade_pattern.htm), visando em implementações futuras um não-acoplamento e dependência na classes de negócio, hoje se caracteriza apenas pela classe `TransactionFacade`.
