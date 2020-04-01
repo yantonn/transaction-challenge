@@ -37,7 +37,7 @@ O resultado do processamento das transações poderá ser encontrado em: `tmp/tr
 | TYPE_FILE_LOADER | Extenção do arquivo que sera carregado com as transações, atualmente suporta apenas `txt` | txt
 | TYPE_FILE_WRITER | Extenção do arquivo de escrita para onde as transações com falha irão ser registradas, atualmente suporta apenas `txt` | txt
 | OPERATIONS_PATH | Identifica onde o arquivo com as operações de transação estão localizados, por padrão aponta para a raiz do projeto | ./
-| AUTHORIZED_OPERATIONS_PATH | Identifica o diretório para onde será exportado o arquivo das transações processadas com problema, por padrão aponta para a raiz do projeto | ./
+| AUTHORIZED_OPERATIONS_PATH | Identifica o diretório para onde será exportado o arquivo das transações processadas com problema, por padrão aponta para a raiz do projeto | /tmp
 | FILE_OPERATIONS_NAME | Identifica o nome do arquivo que irá conter as operações de transação, por padrão ele pesquisa por um arquivo chamado 'operations' | operations
 | FILE_AUTHORIZED_NAME | Identifica o nome do arquivo que irá ser salvo o processamento das transações, por padrão ele salvará com o nome 'authorized' | authorized
 
