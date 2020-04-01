@@ -3,6 +3,7 @@
 # {version} [{date}]
 
 ### Minor
+   - branch(feature/integrated_test) - Adição de ambiente de teste de integrado, testando o resultado esperado como um todo da aplicação e validando a comunicação entre as interfaces
    - branch(feature/adjust_dockerfile) - Alterado execução do Dockerfile para inicializar a aplicação
    - branch(feature/add_unit_test_file_builder) - Adicionado teste unitario na classe builder de arquivos de transação
    - branch(feature/adding_main_application) - Adicionado arquivo `main.py` para executar aplicação como um todo.
