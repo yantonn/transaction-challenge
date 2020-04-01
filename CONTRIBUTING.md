@@ -58,6 +58,9 @@ A pasta `sh` possui alguns scripts para auxiliar na realização de algumas ativ
 # executa os testes da aplicação
 ./sh/test.sh
 
+# executa os testes integrados
+./sh/integrated_test.sh
+
 # executa a aplicação
 ./sh/start.sh
 ```

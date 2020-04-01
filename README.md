@@ -26,7 +26,7 @@ O resultado do processamento das transações poderá ser encontrado em: `tmp/tr
 - Para controle a nivel de contrato(efetuando o parse de um objeto dict para uma represetação como objeto dataclass) utilizo o [marshmallow](https://marshmallow.readthedocs.io/en/2.x-line/) possibilitando uma flexibilidade tanto na leitura quanto na transformação no dado para um objeto específico.
 - Todas as classes que possuem algum método ou exercem alguma lógica, possuem um teste unitário implementado.
 - Para controle dos testes a serem executados utilizo o framework `pytest` dando uma velocidade na execução dos mesmos.
-
+- Os testes de integração foram abordados no conceito `TOP DOWN`, de forma resumida pode ser citado que ele inicia na camada mais ao topo do sistema e vai descendo os níveis, com isso em mente, iniciamos pela camada `Facade`. Para uma explicação de forma mais detalhada sobre a abordagem TOP DOWN, [clique aqui](https://www.guru99.com/integration-testing.html)
 
 ## Variáveis de ambiente
 
