@@ -58,9 +58,6 @@ A pasta `sh` possui alguns scripts para auxiliar na realização de algumas ativ
 # executa os testes da aplicação
 ./sh/test.sh
 
-# executa os testes da aplicação e exporta um relatório de cobertura de teste
-./sh/coverage.sh
-
 # executa a aplicação
 ./sh/start.sh
 ```
